@@ -1,0 +1,5 @@
+depthai>=2.24,<3
+numpy
+opencv-python
+blobconverter
+pytest

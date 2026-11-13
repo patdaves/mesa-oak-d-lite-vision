@@ -1,0 +1,22 @@
+oak_camera_node:
+  ros__parameters:
+    confidence: 0.5
+    fps: 15
+    frame_id: oak_rgb_camera_optical_frame
+    publish_rgb: false          # debugging only (about 47 MB/s at 1080p, 15 fps)
+    publish_depth: false
+person_tracker_node:
+  ros__parameters:
+    gate_m: 0.8
+    max_misses: 10
+    min_hits: 2
+obstacle_confirm_node:
+  ros__parameters:
+    tolerance_m: 0.5            # max camera-vs-LiDAR range difference to confirm
+    corridor_half_angle_deg: 20.0
+    blocking_distance_m: 1.5
+    lidar_window_deg: 5.0
+    ask_timeout_s: 20.0
+    max_asks: 2
+    allow_depth_only: false     # keep false until the LiDAR/camera extrinsics are calibrated
+    language: en

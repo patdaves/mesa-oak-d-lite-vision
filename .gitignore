@@ -1,0 +1,8 @@
+build/
+install/
+log/
+results/
+models/*.blob
+__pycache__/
+*.pyc
+.venv/
